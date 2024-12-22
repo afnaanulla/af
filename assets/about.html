@@ -1,0 +1,72 @@
+<!Doctype html>
+<head>
+    <meta name="viewport" content="with=device-width,initial-sacle=1.0">
+    <title>webpage h&h</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">     
+</head>
+<body> 
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="queries.html">QUERIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>  
+    </section>
+
+    <!---------about us content----->
+
+    <section class="about-us">
+        <div class="about-col">
+            <h1>We are the people of Health & Hygiene Community</h1>
+            <p>Health and hygiene are important for maintaining a healthy body and preventing disease:<br>
+                Personal hygiene Practices that keep your body clean and free of harmful germs and diseases:<br> 
+                Wash your hands with soap and water for at least 20 seconds before and after meals, after using <br>the toilet, and after handling raw meat or fish 
+                Brush and floss your teeth twice a day, Bathe regularly ,<br>Cover your mouth and nose with a tissue when you cough or sneeze,Wash your hands after handling pets<br> 
+                Environmental hygiene:Keeping your surroundings clean and free of insects: Keep your house clean, <br>Cook in clean utensils 
+                Diet: Eating a healthy and balanced diet with enough carbohydrates, proteins, minerals,<br> and vitamins 
+                Other habits: Getting enough sleep, exercising regularly, and drinking plenty of water</p>
+                <a href="https://www.youtube.com/watch?v=jLmN0ts0k4o&t=66s" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="imw.jpg">
+        </div>
+    </section>
+   
+    <!-------footer----->
+
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>Our Health and Hygiene Community helps people with their problems regarding the issues of health and hygiene <br>we conduct training and awareness camps for people to educate them about the importance of health and hygiene.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made With<i class="fa fa-heart-o"></i> By Easy Tutorials</p>
+    </section>
+
+    <!----------javaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right= "0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+</body>
